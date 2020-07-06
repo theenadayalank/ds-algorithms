@@ -2,7 +2,7 @@
   "name": "ds-algorithms",
   "description": "A JavaScript Implementation of Data Structures and Algorithms",
   "scripts": {
-    "test": "yarn lint"
+    "lint": "node_modules/.bin/eslint"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/theenadayalank/ds-algorithms#readme",
   "devDependencies": {
-    "eslint": "^6.6.0",
-    "eslint-plugin-node": "^10.0.0"
+    "eslint": "^7.4.0",
+    "eslint-plugin-node": "^11.1.0"
   }
 }
