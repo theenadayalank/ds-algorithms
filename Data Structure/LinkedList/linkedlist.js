@@ -79,6 +79,28 @@ class LinkedList {
     return false;
   }
 
+  reverse() {
+    let head = this.head;
+    let rev = null;
+
+    while(head != null) {
+      if(!rev) {
+        rev = {
+          data: head.data,
+          next: null
+        };
+      } else {
+        rev = {
+          data: head.data,
+          next: rev
+        }
+      }
+      head = head.next;
+    }
+
+    this.head = rev;
+  }
+
   deleteList() {
     this.head = null;
   }
@@ -98,3 +120,13 @@ li.delete(2);
 console.log('Length', li.length());
 
 li.print();
+
+li.add(2);
+li.add(3);
+li.add(4);
+li.print();
+
+li.reverse();
+li.print();
+
+
